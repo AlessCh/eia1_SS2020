@@ -1,0 +1,47 @@
+h1{
+  color:rgb(129, 90, 90);
+  font-family: monospace;
+  text-align:center;
+}
+
+h3{
+  color:rgb(161, 161, 161);
+  font-family: monospace;
+  text-align:center;
+}
+
+body{
+  text-align:center;
+  font-family: helvetica;
+  font-size: 12px;
+}
+
+button {
+    border: 1px solid white;
+    background-color: transparent;
+    color: rgb(151, 142, 142);
+    font-family: monospace;
+    margin: 4px;
+  }
+
+
+
+/* unvisited link */
+a:link {
+  color: rgb(126, 126, 126);
+}
+
+/* visited link */
+a:visited {
+  color: rgb(126, 126, 126);
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(177, 175, 175);
+}
+
+/* selected link */
+a:active {
+  color: rgb(126, 126, 126);
+}
