@@ -4,6 +4,13 @@ h1{
   text-align:center;
 }
 
+
+h2{
+  color:rgb(161, 161, 161);
+  font-family: monospace;
+  text-align:center;
+}
+
 h3{
   color:rgb(161, 161, 161);
   font-family: monospace;
