@@ -1,0 +1,155 @@
+body{
+  background-image: url("bilder/bg.png");
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.container{
+  position: relative;
+  color: white;
+  margin: 0 auto;
+  width: 700px;
+}
+
+.h1{
+  font-size: 100pt;
+  color: white;
+  letter-spacing: -10px;
+  font-weight: bolder;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.meinname {
+  font-size: 20pt;
+  color: white;
+  letter-spacing: -3px;
+  font-weight: bolder;
+  position: absolute;
+  top: 47%;
+  left: 67%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+.text{
+  font-size: 10pt;
+  color: white;
+  position: absolute;
+  top: 60%;
+  left: 67%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+.icon {
+  position:absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon:hover{
+  opacity: 0.5;
+}
+
+.navibar{
+  display: inline-block;
+  background: black;
+  padding: 5px 10px 5px 5px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  border-radius: 10px 10px 10px 10px;
+}
+  
+.navi1{
+  border-left: solid 2px white;
+}
+
+.navi2{
+  border-left: solid 2px white;
+}
+
+.navi3{
+  border-right: solid 2px white;
+}
+
+div a.activepage{
+  color:  #de8be0;
+  font-weight: bolder;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #de8be0;
+}
+
+a.active{
+   color:  #de8be0;
+   text-decoration: underline;
+}
+
+.about {
+  font-size: 9pt;
+  color:  #4c494d;
+  text-align: center;
+}
+
+.kontakt {
+  color:  #de8be0;
+  font-weight: bolder;
+  margin-right: 1000px;
+}
+
+.formular {
+  background:rgba(143, 142, 142, 0.411);
+  font-size: 9pt;
+  color: white;
+  width: 200px;
+  padding: 5px 5px 5px 5px;
+  margin-left: 200px;
+  text-align: left;
+}
+
+.formular1 {
+  background: rgba(143, 142, 142, 0.411);
+  font-size: 9pt;
+  color: white;
+  width: 350px;
+  padding: 5px 5px 20px 5px;
+  margin-left: 200px;
+  text-align: left;
+}
+
+.datenschutz {
+  font-size: 9pt;
+  color: rgba(143, 142, 142, 0.411);
+  margin-right: 780px;
+}
+
+.absenden {
+  font-size: 9pt;
+  color: white;
+  background:  rgba(143, 142, 142, 0.411);
+  width: 55px;
+  padding: 5px 5px 5px 5px;
+  margin-left: 200px;
+}
+
+.circle {
+  position: relative;
+  display: inline-block;
+  margin: -50px;
+  width: 700px;
+}
+
+.activePage1{
+  border-right: solid 1px white;
+}
