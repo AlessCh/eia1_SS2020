@@ -1,0 +1,59 @@
+body{
+  background-image: url("Bilder/bg.png");
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.container {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-top: 150px;
+}
+
+.überschrift{
+  display: inline-block;
+  position: absolute;
+  font-size:27px;
+  font-weight: bolder;
+  text-align: left;
+  margin-top: 65px;
+  margin-left: -500px;
+  color: white;
+}
+
+.form {
+  display: block;
+  text-align: center;
+}
+
+form {
+  color: white;
+  display: inline-block;
+  position: absolute;
+  margin-left: -500px;
+  margin-right: auto;
+  margin-top: 110px;
+  text-align: left;
+}
+
+#Name {
+  padding: 0 20px 5px 0;
+}
+
+#Gruß {
+  padding: 5px 200px 70px 0;
+}
+
+#Feld {
+  width: 70px;
+}
+
+label, input {
+  display: inline-block;
+  margin-bottom: 5px;
+}
