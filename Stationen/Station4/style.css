@@ -21,14 +21,9 @@ body{
   font-size:27px;
   font-weight: bolder;
   text-align: left;
-  margin-top: 65px;
+  margin-top: 55px;
   margin-left: -500px;
   color: white;
-}
-
-.form {
-  display: block;
-  text-align: center;
 }
 
 form {
@@ -37,20 +32,27 @@ form {
   position: absolute;
   margin-left: -500px;
   margin-right: auto;
-  margin-top: 110px;
+  margin-top: 100px;
   text-align: left;
 }
 
 #Name {
-  padding: 0 20px 5px 0;
+  width: 150px;
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
 
 #Gruß {
-  padding: 5px 200px 70px 0;
+  width: 330px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 0 0px 70px 0;
 }
 
 #Feld {
-  width: 70px;
+  width: 75px;
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
 
 label, input {
