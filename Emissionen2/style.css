@@ -41,9 +41,10 @@ footer p {
     height: 100px;
     background: rgba(150, 147, 147, 0.5);
 }
-.chart {
+
+.chartWrapper .chart {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 0%;
+    height: 10%;
     background: white;
