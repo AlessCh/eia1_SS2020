@@ -1,6 +1,6 @@
 "use strict";
 window.addEventListener("load", function () {
-    document.querySelector(".EU").addEventListener("click", function Europe() { });
+    document.querySelector(".EU").addEventListener("click", Europe);
     document.querySelector(".NA").addEventListener("click", NorthAmerica);
     document.querySelector(".SA").addEventListener("click", SouthAmerica);
     document.querySelector(".AFR").addEventListener("click", Africa);
