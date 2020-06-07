@@ -70,5 +70,4 @@ window.addEventListener("load", function () {
         document.getElementById("t1").innerHTML = "Australia";
         document.querySelector(".chartWrapper .chart").setAttribute("style", "height: 6.655%");
     }
-
 });
