@@ -16,7 +16,7 @@ window.addEventListener("load", function () {
         document.getElementById("h3").innerHTML = "-15,43%";
         document.getElementById("h4").innerHTML = "-756,40";
         document.getElementById("t1").innerHTML = "Europe";
-        document.querySelector(".chartWrapper .chart").setAttribute("style", "height: 14,801%");
+        document.querySelector(".chartWrapper .chart").setAttribute("style", "height: 14.801%");
     }
 
     function NorthAmerica() {
@@ -26,7 +26,7 @@ window.addEventListener("load", function () {
         document.getElementById("h3").innerHTML = "-8,335&";
         document.getElementById("h4").innerHTML = "-564,80";
         document.getElementById("t1").innerHTML = "North America";
-        document.querySelector(".chartWrapper .chart").setAttribute("style", "height: 20,465%");
+        document.querySelector(".chartWrapper .chart").setAttribute("style", "height: 20.465%");
     }
 
 
@@ -37,7 +37,7 @@ window.addEventListener("load", function () {
         document.getElementById("h3").innerHTML = "9,43%";
         document.getElementById("h4").innerHTML = "128,90";
         document.getElementById("t1").innerHTML = "South America";
-        document.querySelector(".chartWrapper .chart").setAttribute("style", "height: 4,127%");
+        document.querySelector(".chartWrapper .chart").setAttribute("style", "height: 4.127%");
     }
 
     function Africa() {
@@ -47,7 +47,7 @@ window.addEventListener("load", function () {
         document.getElementById("h3").innerHTML = "16,68%";
         document.getElementById("h4").innerHTML = "207,50";
         document.getElementById("t1").innerHTML = "Africa";
-        document.querySelector(".chartWrapper .chart").setAttribute("style", "height: 3,75%");
+        document.querySelector(".chartWrapper .chart").setAttribute("style", "height: 3.75%");
 
     }
 
@@ -58,7 +58,7 @@ window.addEventListener("load", function () {
         document.getElementById("h3").innerHTML = "19,971%";
         document.getElementById("h4").innerHTML = "3.319,40";
         document.getElementById("t1").innerHTML = "Asia";
-        document.querySelector(".chartWrapper .chart").setAttribute("style", "height: 50,197%");
+        document.querySelector(".chartWrapper .chart").setAttribute("style", "height: 50.197%");
     }
 
     function Australia() {
@@ -68,7 +68,7 @@ window.addEventListener("load", function () {
         document.getElementById("h3").innerHTML = "4,879%";
         document.getElementById("h4").innerHTML = "107,50";
         document.getElementById("t1").innerHTML = "Australia";
-        document.querySelector(".chartWrapper .chart").setAttribute("style", "height: 6,655%");
+        document.querySelector(".chartWrapper .chart").setAttribute("style", "height: 6.655%");
     }
 
 });
