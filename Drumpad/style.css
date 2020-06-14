@@ -54,6 +54,5 @@ h1 {
   color: #ffffff;
   width: 150px;
   height: 150px;
-  margin: 5px 5px;
-  display: inline-block;
+  margin: auto;
 }
