@@ -11,24 +11,24 @@ window.addEventListener("load", function () {
     document.getElementById("pad9").addEventListener("click", function () { playSample("snare.mp3"); });
     document.getElementById("playbutton").addEventListener("click", playbutton);
     document.getElementById("recordbutton").addEventListener("click", aufnahme);
-    document.getElementById("deletebutton").addEventListener("click", function () { defbeat = []; }); //8.4: Beat löschen //
+    document.getElementById("deletebutton").addEventListener("click", function () { beat = []; }); //8.4: Beat löschen //
     //8.2 Beat on Loop//
-    var defbeat = ["kick.mp3", "snare.mp3", "hihat.mp3"];
-    var n = 0;
+    var beat = ["kick.mp3", "snare.mp3", "hihat.mp3"];
+    var wert = 0;
     var interbeat;
     function playBeat() {
         interbeat = setInterval(function () {
-            playSample(defbeat[n]);
-            n++;
-            if (n >= defbeat.length) {
-                n = 0;
+            playSample(beat[wert]);
+            wert++;
+            if (wert >= beat.length) {
+                wert = 0;
             }
         }, 300);
     }
-    //8.6 new audio//
+    //8.6 play sample + new audio//
     function playSample(mp3) {
-        if (rec) {
-            defbeat.push(mp3);
+        if (buttonaufnahme) {
+            beat.push(mp3);
         }
         const sound = new Audio(mp3);
         sound.play();
@@ -49,13 +49,13 @@ window.addEventListener("load", function () {
         clearInterval(interbeat);
     }
     //8.5: Aufnahme des Beats //
-    var rec = false;
+    var buttonaufnahme = false;
     function aufnahme() {
-        if (rec) {
-            rec = false;
+        if (buttonaufnahme) {
+            buttonaufnahme = false;
         }
         else {
-            rec = true;
+            buttonaufnahme = true;
         }
     }
 });
