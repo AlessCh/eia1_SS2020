@@ -1,0 +1,132 @@
+html, body {
+  background-color: #000000;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+h1 {
+  color: #ffffff;
+  font-size: 40px;
+  letter-spacing: 20px;
+  text-align: center;
+  }
+  
+.drumpad {
+  display: right;
+  align-items: center;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  cursor: pointer;
+}
+
+#pad1, #pad2, #pad3 { 
+  border: 2px solid rgb(15, 61, 129);
+  color: #3385FF;
+  background-color: #3385FF;
+  width: 150px;
+  height: 150px; 
+  margin: 5px 5px;
+  display: inline-block;
+}
+  
+#pad4, #pad5, #pad6, #pad7 { 
+  border: 2px solid rgb(172, 40, 73);
+  color: #FF33F8;
+  background-color: #FF33F8;
+  width: 150px;
+  height: 150px;
+  margin: 5px 5px;
+  display: inline-block;
+}
+  
+#pad8, #pad9{ 
+  border: 2px solid rgb(157, 118, 18); 
+  color: #FFC433;
+  background-color: #FFC433;
+  width: 150px;
+  height: 150px;
+  margin: 5px 5px;
+  display: inline-block;
+}
+
+
+#pad1:hover{
+  opacity: 100%;
+  transform: scale(1.1);
+}
+
+#pad2:hover{
+  opacity: 100%;
+  transform: scale(1.1);
+}
+
+#pad3:hover{
+  opacity: 100%;
+  transform: scale(1.1);
+}
+
+#pad4:hover{
+  opacity: 100%;
+  transform: scale(1.1);
+}
+
+#pad5:hover{
+  opacity: 100%;
+  transform: scale(1.1);
+}
+
+#pad6:hover{
+  opacity: 100%;
+  transform: scale(1.1);
+}
+
+#pad7:hover{
+  opacity: 100%;
+  transform: scale(1.1);
+}
+
+#pad8:hover{
+  opacity: 100%;
+  transform: scale(1.1);
+}
+
+#pad9:hover{
+  opacity: 100%;
+  transform: scale(1.1);
+}
+
+#playbutton{ 
+  color: #ffffff;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+}
+
+#playbutton:hover{
+  opacity: 100%;
+  transform: scale(1.1);
+}
+
+#deletebutton{ 
+  color: #ffffff;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+}
+
+#deletebutton:hover{
+  opacity: 100%;
+  transform: scale(1.1);
+}
+
+#recordbutton{  
+  color: #ffffff;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+}
+
+#recordbutton:hover{
+  opacity: 100%;
+  transform: scale(1.1);
+}
