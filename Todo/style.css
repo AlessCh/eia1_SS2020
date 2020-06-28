@@ -7,10 +7,18 @@ body{
   color: rgb(105, 79, 79);
 }
 
+h1 {
+  color: #8e8d8d;
+  font-size: 40px;
+  letter-spacing: 15px;
+  text-align: center;
+  }
+
 .container{
   padding:10px;
   width:380px;
   margin:0 auto;
+  border: 2px;
 }
 
 .header{
@@ -28,6 +36,8 @@ body{
   height: 350px;
   max-height:350px;
   background-color: #FFF;
+  border-bottom: 2px;
+  border-color: #000000;
   overflow: auto;
 }
 
@@ -95,7 +105,7 @@ body{
   width: 360px;
   height:40px;
   border: none;
-  background-color: rgb(213, 213, 213);
+  background-color: rgb(230, 228, 228);
   padding: 10px;
   border-top: transparent;
 }
@@ -106,7 +116,7 @@ body{
   right: 10px;
   height: 40px;
   width: 350px;
-  background-color: transparent;
+  background-color: #FFF;
   color: rgb(93, 46, 46);
   border: transparent;
   font-size: 15px;
