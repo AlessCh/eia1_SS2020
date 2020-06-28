@@ -1,4 +1,5 @@
 //Code Tutorial from a Youtube video: https://www.youtube.com/watch?v=b8sUhU_eq3g //
+//Zähler Idee von https://mariehoffm.github.io/EIA1-SoSe20/Aufgabe9neu/index.html //
 
 const list = document.getElementById("list");
 const input = document.getElementById("input");
