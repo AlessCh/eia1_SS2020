@@ -1,5 +1,6 @@
 "use strict";
-//inspiriert von https://fionavi.github.io/EIA-SOSE20/Aufgabe%2010/Aufgabe10.html //
+//aufb10 inspiriert von https://fionavi.github.io/EIA-SOSE20/Aufgabe%2010/Aufgabe10.html //
+//und sprachbefehl: https://janzonca.github.io/EIA1-SoSe20/Aufgabe10/todo-app.html//
 var toDoList = [
     {
         text: "coding",
