@@ -1,5 +1,6 @@
 "use strict";
-//inspiriert von https://fionavi.github.io/EIA-SOSE20/Aufgabe%2010/Aufgabe10.html //
+//inspiration a10 https://fionavi.github.io/EIA-SOSE20/Aufgabe%2010/Aufgabe10.html //
+//inspiration sprachbefehl: https://cocoze.github.io/EIA-SoSe20/Aufgabe%2010/todo2.html//
 var toDoList = [
     {
         text: "coding",
@@ -78,13 +79,13 @@ function deleteTodo(index) {
 window.addEventListener("load", function () {
     const artyom = new Artyom();
     artyom.addCommands({
-        indexes: ["neue Aufgabe *"],
+        indexes: ["neues To Do *"],
         smart: true,
         action: function (i, wildcard) {
-            console.log("Neue Aufgabe wird erstellt: " + wildcard);
-            toDoList.unshift({
+            console.log("Neue Aufgabe wird erstellt: " + wildcard); //wildcard ist Platzhalter
+            todosl.unshift({
                 text: wildcard,
-                checked: false
+                isChecked: false
             });
             drawListToDOM();
         }
@@ -101,7 +102,7 @@ window.addEventListener("load", function () {
             }).then(function () {
                 console.log("Ready!");
             });
-        }, 250);
+        }, 150);
     }
     startContinuousArtyom();
 });
