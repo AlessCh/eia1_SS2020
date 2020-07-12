@@ -1,6 +1,5 @@
 "use strict";
-//aufb10 inspiriert von https://fionavi.github.io/EIA-SOSE20/Aufgabe%2010/Aufgabe10.html //
-//und sprachbefehl: https://janzonca.github.io/EIA1-SoSe20/Aufgabe10/todo-app.html//
+//inspiriert von https://fionavi.github.io/EIA-SOSE20/Aufgabe%2010/Aufgabe10.html //
 var toDoList = [
     {
         text: "coding",
@@ -75,17 +74,19 @@ function deleteTodo(index) {
     toDoList.splice(index, 1);
     drawListToDOM();
 }
+//mikro befehl
 window.addEventListener("load", function () {
     const artyom = new Artyom();
     artyom.addCommands({
-        indexes: ["erstelle Aufgabe *"],
+        indexes: ["neue Aufgabe *"],
         smart: true,
         action: function (i, wildcard) {
             console.log("Neue Aufgabe wird erstellt: " + wildcard);
-            todoObjects.unshift({
-                todosText: (wildcard),
-                todosChecked: false
+            toDoList.unshift({
+                text: wildcard,
+                checked: false
             });
+            drawListToDOM();
         }
     });
     function startContinuousArtyom() {

@@ -1,5 +1,4 @@
-//aufb10 inspiriert von https://fionavi.github.io/EIA-SOSE20/Aufgabe%2010/Aufgabe10.html //
-//und sprachbefehl: https://janzonca.github.io/EIA1-SoSe20/Aufgabe10/todo-app.html//
+//inspiriert von https://fionavi.github.io/EIA-SOSE20/Aufgabe%2010/Aufgabe10.html //
 
 interface DisplaytoDo {
     text: string;
@@ -152,42 +151,35 @@ function deleteTodo(index: number): void {
 
 }
 
-//Spracheingabe:
-declare var Artyom: any;
+//mikro befehl
 
-window.addEventListener("load", function(): void {
-    const artyom: any = new Artyom();
-    
-    artyom.addCommands ({
-        indexes: ["erstelle Aufgabe *"],
+window.addEventListener("load", function () {
+    const artyom = new Artyom();
+    artyom.addCommands({
+        indexes: ["neue Aufgabe *"],
         smart: true,
-        action: function(i: any, wildcard: string): void {
+        action: function (i, wildcard) {
             console.log("Neue Aufgabe wird erstellt: " + wildcard);
-            todoObjects.unshift({
-                todosText: (wildcard), 
-                todosChecked: false });
-            }
+            toDoList.unshift({
+                text: wildcard,
+                checked: false
+            });
+            drawListToDOM();
+        }
     });
-    
-    function startContinuousArtyom(): void {
+    function startContinuousArtyom() {
         artyom.fatality();
-    
-        setTimeout(
-            function(): void {
-                artyom.initialize({
-                    lang: "de-DE",
-                    continuous: true,
-                    listen: true,
-                    interimResults: true,
-                    debug: true
-                }).then(function(): void {
-                    console.log("Ready!");
-                });
-            }, 
-            250);
+        setTimeout(function () {
+            artyom.initialize({
+                lang: "de-DE",
+                continuous: true,
+                listen: true,
+                interimResults: true,
+                debug: true
+            }).then(function () {
+                console.log("Ready!");
+            });
+        }, 250);
     }
-    
     startContinuousArtyom();
-    
-
 });
