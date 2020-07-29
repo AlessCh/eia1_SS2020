@@ -1,75 +1,101 @@
 body{
-    background-color: white;
-    text-align: left;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: white;
+  text-align: left;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 footer{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 12px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 12px;
 }
 
-#button1{
-    position:absolute;
-    width: 150px;
-    height: 150px;
-    left:700px;
-    top: 360px;
-    border-radius: 8px;
-    border-color: #596790;
-    background-color: #8292c4;
-    cursor: pointer;
+h1 {
+  color: #080808;
+  font-size: 40px;
+  letter-spacing: 20px;
+  text-align: center;
+  }
+  
+.game {
+  display: right;
+  align-items: center;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  cursor: pointer;
 }
 
-#button2{
-    position:absolute;
-    width: 150px;
-    height: 150px;
-    left:850px;
-    top: 210px;
-    border-radius: 8px;
-    border-color: #a96f43;
-    background-color: #dda77e;
-    cursor: pointer;
+#pad1{ 
+  border-radius: 8px;
+  border-color: #596790;
+  background-color: #8292c4;
+  width: 150px;
+  height: 150px; 
+  margin: 5px 5px;
+  display: inline-block;
 }
 
-#button3{
-    position:absolute;
-    width: 150px;
-    height: 150px;
-    left:550px;
-    top: 210px;
-    border-radius: 8px;
-    border-color: #436c45;
-    background-color: #96ec99;
-    cursor: pointer;
+#pad2 { 
+  border-radius: 8px;
+  border-color: #a96f43;
+  background-color: #dda77e;
+  width: 150px;
+  height: 150px; 
+  margin: 5px 5px;
+  display: inline-block;
 }
 
-#button5{
-    position:absolute;
-    width: 150px;
-    height: 150px;
-    left:700px;
-    top: 210px;
-    border-radius: 8px;
-    border-color: #5f4563;
-    background-color: #e9a8f5;
-    cursor: pointer;
+#pad3 { 
+  border-radius: 8px;
+  border-color: #436c45;
+  background-color: #96ec99;
+  width: 150px;
+  height: 150px; 
+  margin: 5px 5px;
+  display: inline-block;
 }
 
-#button6{
-    position:absolute;
-    width: 150px;
-    height: 150px;
-    left:700px;
-    top: 60px;
-    border-radius: 8px;
-    border-color: #6c693b;
-    background-color: #f7ef8c;
-    cursor: pointer;
+#pad4 { 
+  border-radius: 8px;
+  border-color: #5f4563;
+  background-color: #e9a8f5;;
+  width: 150px;
+  height: 150px; 
+  margin: 5px 5px;
+  display: inline-block;
 }
 
+#pad5 { 
+  border-radius: 8px;
+  border-color: #6c693b;
+  background-color: #f7ef8c;
+  width: 150px;
+  height: 150px; 
+  margin: 5px 5px;
+  display: inline-block;
+}
 
-button:hover{
-    opacity: 70%;
+#pad1:hover{
+  opacity: 100%;
+  transform: scale(1.1);
+}
+
+#pad2:hover{
+  opacity: 100%;
+  transform: scale(1.1);
+}
+
+#pad3:hover{
+  opacity: 100%;
+  transform: scale(1.1);
+}
+
+#pad4:hover{
+  opacity: 100%;
+  transform: scale(1.1);
+}
+
+#pad5:hover{
+  opacity: 100%;
+  transform: scale(1.1);
 }
