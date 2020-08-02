@@ -1,101 +1,230 @@
 body{
   background-color: white;
   text-align: left;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-footer{
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 12px;
+  font-family: Calibri Light;
 }
 
 h1 {
-  color: #080808;
+  color: #454343;
+  font-weight: bold;
   font-size: 40px;
   letter-spacing: 20px;
   text-align: center;
   }
-  
-.game {
-  display: right;
-  align-items: center;
-  position: relative;
-  margin: auto;
+
+h2 {
+  color: #898787;
+  font-size: 14px;
+  letter-spacing: 2px;
   text-align: center;
-  cursor: pointer;
 }
 
-#pad1{ 
+footer{
+  font-family: Calibri Light;
+  font-size: 12px;
+  color: rgb(0, 0, 0);
+  background-color: rgba(165, 165, 165, 0.258);
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+a{
+  font-family: Calibri Light;
+  color: rgb(0, 0, 0);
+  font-style: italic;
+}
+
+button{
+  cursor: pointer;
+  text-align: center;
+  font-family: Calibri Light;
+  height: 40px;
+  width: 100px;
+  border-radius: 6px;
+  border-color: #9d9d9d;
+  background-color: rgb(235, 232, 232);
+  margin: 5px 5px;
+}
+
+.countertext {
+  font-weight: bold;
+  position: absolute;
+  text-align: center;
+  font-family: Calibri Light;
+  color: seashell;
+  font-size: 15px;
+  margin-left:100px;
+  
+}
+
+#befehl{
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: Calibri Light;
+  position: relative;
+  font-size: 15px ;
+  margin-bottom: -110px;
+  margin-top: 70px;
+}
+
+#anreihe {
+  background: #ffffffcb;
+  color: rgb(46, 45, 45);
+  font-family: Calibri Light;
+  font-style: italic;
+  font-size: 12px;
+  border-color: rgb(120, 120, 120);
+  border-style: double;
+  border-radius: 20px;
+  height: 40px;
+  width: 80px;
+  text-align: center;
+  line-height: 40px;
+  margin-top: 140px;
+  margin-left: 83px;
+}
+
+#kreis {
+  border-radius: 50%;
+  border-color: #e4e2e2;
+  height: 500px;
+  width: 500px;
+  position: relative;
+  border-width: 8px;
+  border-style: solid;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+#obenlinks {
+  cursor: pointer;
+  position: absolute;
+  height: 250px;
+  width: 250px;
   border-radius: 8px;
   border-color: #596790;
   background-color: #8292c4;
-  width: 150px;
-  height: 150px; 
-  margin: 5px 5px;
-  display: inline-block;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0px 0px -250px;
+  border-width: 3px;
+  border-style: solid;
+  box-sizing: border-box;
+  -moz-border-radius: 250px 0 0 0;
+  -webkit-border-radius: 250px 0 0 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
-#pad2 { 
+#obenrechts{
+  cursor: pointer;
+  position: absolute;
+  height: 250px;
+  width: 250px;
   border-radius: 8px;
   border-color: #a96f43;
   background-color: #dda77e;
-  width: 150px;
-  height: 150px; 
-  margin: 5px 5px;
-  display: inline-block;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0px 0px 0px;
+  border-width: 3px;
+  border-style: solid;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-border-radius: 0 250px 0 0;
+  -webkit-border-radius: 0 250px 0 0;
 }
 
-#pad3 { 
+
+#untenlinks {
+  cursor: pointer;
+  position: absolute;
+  height: 250px;
+  width: 250px;
   border-radius: 8px;
   border-color: #436c45;
   background-color: #96ec99;
-  width: 150px;
-  height: 150px; 
-  margin: 5px 5px;
-  display: inline-block;
+  top: 50%;
+  left: 50%;
+  margin: 0px -250px 0px -250px;
+  border-width: 3px;
+  border-style: solid;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-border-radius: 0 0 0 250px;
+  -webkit-border-radius: 0 0 0 250px;
 }
 
-#pad4 { 
+#untenrechts{
+  cursor: pointer;
+  position: absolute;
+  height: 250px;
+  width: 250px;
   border-radius: 8px;
   border-color: #5f4563;
-  background-color: #e9a8f5;;
-  width: 150px;
-  height: 150px; 
-  margin: 5px 5px;
-  display: inline-block;
+  background-color: #e9a8f5;
+  top: 50%;
+  left: 50%;
+  margin: 0px 0px -250px 0px;
+  border-width: 3px;
+  border-style: solid;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-border-radius: 0 0 250px 0;
+  -webkit-border-radius: 0 0 250px 0;
+
 }
 
-#pad5 { 
-  border-radius: 8px;
-  border-color: #6c693b;
-  background-color: #f7ef8c;
-  width: 150px;
-  height: 150px; 
-  margin: 5px 5px;
-  display: inline-block;
+
+#kreisinnen {
+  cursor: pointer;
+  position: absolute;
+  background: rgba(165, 165, 165);
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  border-width: 3px;
+  top: 50%;
+  left: 50%;
+  margin: -125px 0px 0px -125px;
+  box-sizing: border-box;
+  border-style: solid;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
-#pad1:hover{
-  opacity: 100%;
-  transform: scale(1.1);
+button:hover{
+  opacity: 50%;
+  border-color: #ffffff;
+  font-weight: bold;
 }
 
-#pad2:hover{
-  opacity: 100%;
-  transform: scale(1.1);
+#obenlinks:hover {
+  opacity: 80%;
+  border-color: rgb(255, 255, 255);
 }
 
-#pad3:hover{
-  opacity: 100%;
-  transform: scale(1.1);
+#obenrechts:hover{
+  opacity: 80%;
+  border-color: rgb(255, 255, 255);
 }
 
-#pad4:hover{
-  opacity: 100%;
-  transform: scale(1.1);
+#untenlinks:hover{
+  opacity: 80%;
+  border-color: rgb(255, 255, 255);
 }
 
-#pad5:hover{
-  opacity: 100%;
-  transform: scale(1.1);
+#untenrechts:hover{
+  opacity: 80%;
+  border-color: rgb(255, 255, 255);
 }
+
+#kreisinnen:hover{
+  border-color: rgb(255, 255, 255);
+}
+
